@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Root from 'client/Root';
 import * as serviceWorker from './serviceWorker';
+import 'scss/airbnb.scss';
 
 ReactDOM.render(
   <React.StrictMode>
