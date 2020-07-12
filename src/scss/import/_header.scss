@@ -1,13 +1,27 @@
 .headerBox {
   position: relative;
-  ul {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 2rem;
-    li {
-      padding-left: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 5fr;
+  height: 3rem;
+  padding: 1rem 0;
+  .airbnbLog {
+    grid-column: 1 / 2;
+    img {
+      max-width: 100%;
     }
   }
+  .headerList {
+    grid-column: 3 / 4;
+    ul {
+      display: flex;
+      position: absolute;
+      right: 0;
+      font-size: 1rem;
+      margin: 1rem 0;
+      li {
+        padding-left: 2rem;
+      }
+    }
+  }
+
 }
