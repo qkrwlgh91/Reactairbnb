@@ -19,11 +19,16 @@ $footer-color: #DCDCDC;
 .footerCopright {
   display: grid;
   grid-template-columns: repeat(1, 3fr 1fr);
+  position: relative;
   ul {
     margin: 2rem 0;
     display: flex;
     &:last-child {
       font-weight: 600;
+      grid-column: 2 / 3;
+      position: absolute;
+      right: 0;
+
     }
     li {
       padding-right: 1rem;
