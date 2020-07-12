@@ -1,0 +1,13 @@
+.headerBox {
+  position: relative;
+  ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 2rem;
+    li {
+      padding-left: 2rem;
+    }
+  }
+}

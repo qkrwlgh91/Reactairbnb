@@ -7,9 +7,9 @@ $footer-color: #DCDCDC;
 .footerInfoBox {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 2em 0;
+  padding: 2rem 0;
   ul > li {
-      padding-top: 1em;
+      padding-top: 1rem;
       &:first-child {
         font-weight: 600;
       }
@@ -18,12 +18,15 @@ $footer-color: #DCDCDC;
 
 .footerCopright {
   display: grid;
-  grid-template-columns: repeat(1, 2fr 1fr);
+  grid-template-columns: repeat(1, 3fr 1fr);
   ul {
-    margin: 2em 0;
+    margin: 2rem 0;
     display: flex;
+    &:last-child {
+      font-weight: 600;
+    }
     li {
-      padding-right: 1em;
+      padding-right: 1rem;
     }
   }
 }
