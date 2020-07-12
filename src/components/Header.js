@@ -18,7 +18,6 @@ const Header = () => {
                     <li><Link to="/SignIn">Sing up</Link></li>
                 </ul>
             </div>
-            <hr/>
         </div>
     )
 }
