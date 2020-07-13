@@ -2,9 +2,12 @@ import React, {Component} from "react";
 import {Route, Switch} from 'react-router-dom';
 import {Home, Login, SignIn} from "../pages";
 import Header from "../components/Header";
+import SignUp from "../pages/SignUp";
 import Footer from "../components/Footer";
 
-class App extends Component {
+class App extends React.Component {
+
+
     render() {
         return (
             <div>
@@ -14,8 +17,7 @@ class App extends Component {
                     <Route path="/Login/:name" component={Login}/>
                     <Route path="/Login" component={Login}/>
                 </Switch>
-                <Route path="/SignIn" component={SignIn}/>
-                <hr/>
+                <SignUp/>
                 <Footer/>
             </div>
         )
