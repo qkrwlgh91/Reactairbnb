@@ -1,3 +1,3 @@
 export { default as Home } from './Home';
 export { default as Login } from './Login';
-export { default as SignIn } from './SignUp';
+export { default as SignIn } from '../components/SignUp';

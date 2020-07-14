@@ -4,56 +4,156 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.16);
+  background: rgba(0, 0, 0, 0.3);
 }
 .Modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
-  border-radius: 10px;
+  width: 40%;
+  border-radius: 1.1rem;
   background: white;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  & > * {
-    &:first-child {
-      margin-top: 16px;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7);
+  .modalTitle {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    text-align: center;
+    margin: 1.5rem 0;
+    button.modalX {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      &:hover {
+        width: 1.8rem;
+        height: 1.8rem;
+        background: rgba(117,129,117,0.18);
+        border-radius: 50%;
+      }
     }
-    margin-left: 16px;
-    margin-right: 16px;
+    p.title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
   }
-  p.title {
-    font-size: 16pt;
-    font-weight: bold;
-    color: #333;
-  }
-  .content {
+
+  .userInfoBox {
     border-top: 1px solid #bebebe;
-    margin-top: 16px;
-    p {
-      padding: 8px;
-      font-size: 12pt;
-      color: #999;
+    padding: 2rem 1rem 0 1rem;
+    .RegionSelectBox {
+      border: 1px solid #bebebe;
+      display: grid;
+      grid-template-columns: 15fr 1fr;
+      padding: 0.7rem;
+      div:first-child {
+        grid-row : 1 / 2;
+        grid-column: 1 / 2;
+      }
+      select {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+      }
+      div:last-child {
+        grid-column: 2 / 3;
+      }
+    }
+    .phoneNumberLabel {
+      border: 1px solid #bebebe;
+      padding: 0.7rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      input {
+        font-size: 1.1rem;
+        padding: 0.4rem;
+      }
+    }
+    p:last-child {
+      margin: 0.9rem 0 0 0;
+      font-size: 0.9rem;
     }
   }
   .button-wrap {
-    margin: 0;
-    margin-top: 8px;
+    padding: 1rem;
     button {
       width: 100%;
-      padding: 12px 0;
-      border-radius: 0 0 10px 10px;
-      background: #ad7cef;
-      font-size: 13pt;
+      padding: 0.8rem 0;
+      border-radius: 0.5rem;
+      background: rgba(170,3,27,0.88);
+      font-size: 1.2rem;
       color: white;
       border: 0;
       cursor: pointer;
       &:hover {
-        background: #7f49c8;
+        background: rgba(170,3,27,0.83);
       }
       &:active {
-        background: #7e49c8;
+        background: rgba(170,3,27,0.88);
       }
+    }
+  }
+  span.orLine {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    padding: 1rem;
+    font-size: 0.8rem;
+    &::before, &::after {
+      content: "";
+      border: 1px solid #bebebe;
+      border-bottom: none;
+      margin: 0.4rem;
+      height: 0;
+    }
+  }
+  .joinOthersWay {
+    text-align: center;
+    padding: 1rem;
+      button {
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+        width: 100%;
+        height: 3rem;
+        cursor: pointer;
+        background: none;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        border-color: rgba(27,27,27,0.45);
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          grid-column: 1 / 2;
+        }
+        &:hover {
+          border-color: black;
+        }
+        span.JoinwayTitle {
+          margin: 0.8rem 0 0.8rem -2rem;
+          grid-column: 2 / 3;
+          font-size: 1rem;
+        }
+
+    }
+
+  }
+  .moveToLogIn {
+    padding: 0 1rem 2rem 1rem;
+    p {
+      color: dimgrey;
+      font-size: 1rem;
+    }
+    button.LoginBtn {
+      border: none;
+      border-bottom: 1px solid black;
+      background: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: black;
+      cursor: pointer;
     }
   }
 }

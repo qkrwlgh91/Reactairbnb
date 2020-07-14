@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import log from '../scss/img/airbnbLog.png';
-import SignUp from "../pages/SignUp";
+import SignUp from "./SignUp";
 
 class Header extends React.Component {
 
