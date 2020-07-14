@@ -1,11 +1,12 @@
 .blackLivesBox {
+  @include container($margin: 1.5rem auto);
   background: black;
   color: white;
-  border: 1px solid black;
-  border-right: 2rem;
+  box-sizing: border-box;
+  border-radius: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding : 9rem 0 3rem 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding : 12rem 0 3rem 3rem;
   h1 {
     grid-column-start: 1;
     font-size: 2rem;

@@ -1,4 +1,5 @@
-@mixin container {
-  margin: 0 auto;
-  width: 1280px;
+@mixin container($margin: 0 auto, $width: 90%, $padding: 0 5%) {
+  margin: $margin;
+  width: $width;
+  padding: $padding;
 }

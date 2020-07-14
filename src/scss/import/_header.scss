@@ -1,9 +1,10 @@
+
 .headerBox {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 4fr 5fr;
   height: 3rem;
-  padding: 1rem 0;
+  @include container($padding: 1rem 5%);
   .airbnbLog {
     grid-column: 1 / 2;
     img {
@@ -15,8 +16,6 @@
     font-weight: 600;
     ul {
       display: flex;
-      position: absolute;
-      right: 0;
       font-size: 1rem;
       margin: 1rem 0;
       li {

@@ -3,7 +3,9 @@
 .searchRoomBox {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @include container;
   margin: 2.5rem 0 2rem 0;
+
   .searchRoomTitle {
     grid-row: 1 / 2;
     grid-column: 1 / 2;

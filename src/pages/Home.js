@@ -6,7 +6,7 @@ import SearchRoom from "../components/Home/SearchRoom";
 
 const Home = () => {
     return (
-        <div className="screenSize">
+        <div>
             <SearchRoom />
             <FindWhatMatters />
             <OnlineExperiences />
