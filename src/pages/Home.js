@@ -3,10 +3,12 @@ import BlackLivesMatter from "../components/Home/BlackLiveMatter";
 import FindWhatMatters from "../components/Home/findWhatMetters";
 import OnlineExperiences from "../components/Home/OnlineExperiences";
 import SearchRoom from "../components/Home/SearchRoom";
+import Header from "../components/Header";
 
 const Home = () => {
     return (
         <div>
+            <Header />
             <SearchRoom />
             <FindWhatMatters />
             <OnlineExperiences />

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import log from '../scss/img/airbnbLog.png';
 import SignUp from "./SignUp";
+import HelpModal from "./Help/HelpModal";
 
 class Header extends React.Component {
 
@@ -9,6 +10,7 @@ class Header extends React.Component {
         super(props);
         this.state = {
             isModalOpen: false,
+            helpModalOpen: false,
         }
     }
 
@@ -18,6 +20,10 @@ class Header extends React.Component {
 
     closeModal = () => {
         this.setState({isModalOpen: false});
+    }
+
+    openHelpModal = (e) => {
+        this.setState({helpModalOpen: true})
     }
 
     render() {
@@ -31,7 +37,8 @@ class Header extends React.Component {
                         <li>사진</li>
                         <li>Host your home</li>
                         <li>Host an experience</li>
-                        <li>Help</li>
+                        <li><button onClick={this.openHelpModal}>Help</button></li>
+                        <HelpModal isOpen={this.state.helpModalOpen} close={this.closeModal} />
                         <li><Link to="/Login">Log in</Link></li>
                         <li><button onClick={this.openModal}>Sign up</button></li>
                         <SignUp isOpen={this.state.isModalOpen} close={this.closeModal} />
