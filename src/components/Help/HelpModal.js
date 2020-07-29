@@ -1,6 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types';
+import {useSelector} from "react-redux";
+import {helpContReducer} from "../../redux/reducers/helpContent";
 
-const HelpModal = ({ isOpen, close }) => {
+function HelpModal ({ isOpen, close }) {
+
+    const help = useSelector(state=>state.helpContReducer)
+
     return (
         <>
             {
@@ -18,7 +24,17 @@ const HelpModal = ({ isOpen, close }) => {
                                     <input type="text" placeholder="E.g.:reservation status"/>
                                 </div>
                                 <div className="helpRecommend">
-                                    <h3>RECOMMENDED ARTICLES</h3>
+                                    <h3>{help.title}</h3>
+                                    <p>{help.hContents[0].tit}</p>
+                                </div>
+                                <div>
+                                    <h2>Reservation requests</h2>
+                                </div>
+                                <div>
+                                    <h2>Contacting hosts</h2>
+                                </div>
+                                <div>
+                                    <h2>Prices & fees</h2>
                                 </div>
                             </div>
                             <div className="helpFooter">
