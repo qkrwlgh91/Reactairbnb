@@ -26,6 +26,10 @@ class Header extends React.Component {
         this.setState({helpModalOpen: true})
     }
 
+    closeHelpModal = (e) => {
+        this.setState({helpModalOpen: false})
+    }
+
     render() {
         return (
             <div className="headerBox">
@@ -38,7 +42,9 @@ class Header extends React.Component {
                         <li>Host your home</li>
                         <li>Host an experience</li>
                         <li><button onClick={this.openHelpModal}>Help</button></li>
-                        <HelpModal isOpen={this.state.helpModalOpen} close={this.closeModal} />
+                         <HelpModal isOpen={this.state.helpModalOpen} close={this.closeHelpModal}/>
+
+
                         <li><Link to="/Login">Log in</Link></li>
                         <li><button onClick={this.openModal}>Sign up</button></li>
                         <SignUp isOpen={this.state.isModalOpen} close={this.closeModal} />
@@ -48,5 +54,7 @@ class Header extends React.Component {
         )
     }
 }
+
+
 
 export default Header;

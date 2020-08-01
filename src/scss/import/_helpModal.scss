@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 25%;
+  width: 24.3%;
   height: 100vh;
   background-color: white;
   box-shadow: -0.2rem 0 0.2rem rgba(192, 192, 192, 0.7);
@@ -33,6 +33,7 @@
   .helpModalBody {
     padding: 1.5rem 2rem;
     overflow: scroll;
+    height: 75%;
     .helpSearch {
 
       h1.searchTitle {
@@ -50,6 +51,13 @@
         font-size: 0.9rem;
         font-weight: 600;
         margin: 0.7rem auto;
+
+      }
+    }
+    .helpRecommend {
+      h3 {
+        font-size: 0.9rem;
+        margin: 2rem 0 1.1rem 0;
       }
     }
   }
@@ -77,5 +85,29 @@
       font-size: 1rem;
       margin-top: 1rem;
     }
+  }
+}
+
+.helpRecomendCont {
+  p.HRTit {
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 120%;
+    margin-top: 0.7rem;
+  }
+  p.HRCont {
+    font-weight: 400;
+    margin: 0.3rem 0;
+    line-height: 120%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    max-height: 2.4rem;
+  }
+  p.HRRead {
+    color: #008B8B;
   }
 }

@@ -2,25 +2,26 @@ import {ADD_HELPCONT} from "../actionTypes";
 
 const helpContents = {
     title: 'RECOMMENDED ARTICLES',
+    topic: 'EXPLORE MORE ARTICLES BY TOPIC',
     hContents: [
         {tit: 'Extenuating circumstances policy and the coronavirus(COVID-19)',
          cont: 'Updated 15 July 2020',
          id: 1
         },
         {tit: 'How do I create an account?',
-            cont: `If you don't have an Airbnb account yet, go to airbnb.com and click Sign Up.`,
+            cont: `If you don't have an Airbnb account yet, go to airbnb.com and click Sign Up. You can sign up using`,
             id: 2
         },
         {tit: 'How do I reset or change my password?',
-            cont: `If you don't forgotten your password, or you're having trouble logging in to your Airbnb account, go to...`,
+            cont: `If you don't forgotten your password, or you're having trouble logging in to your Airbnb account, go to the`,
             id: 3
         },
         {tit: 'What should I do if someone asks me to pay outside of the Airbnb website?',
-            cont: `If you've been paid for your reservation outside of Airbnb(e.g. a bank transfer), you may have paid for a ...`,
+            cont: `If you've been paid for your reservation outside of Airbnb(e.g. a bank transfer), you may have paid for a `,
             id: 4
         },
         {tit: 'What is the Airbnb cancellation policy for stays?',
-            cont: `On Airbnbm, hosts set the cancellation policies that guests can book with. The terms vary depending on...`,
+            cont: `On Airbnbm, hosts set the cancellation policies that guests can book with. The terms vary depending on`,
             id: 5
         },
     ],
