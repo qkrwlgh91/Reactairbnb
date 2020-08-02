@@ -39,7 +39,7 @@ const helpContents = {
         {tit: 'What if a host asks me to sign a contract?', id: 4},
         {tit: 'How do I book a place on Airbnb?', id: 5},
     ],
-    Prices: [
+    pricesAndFees: [
         {tit: 'Extenuating circumstances policy and the coronavirus(COVID-19)', id: 1},
         {tit: 'How is the price determined for my reservation?', id: 2},
         {tit: 'Can I pay with any currency?', id: 3},

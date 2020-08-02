@@ -111,3 +111,63 @@
     color: #008B8B;
   }
 }
+
+.reservation {
+  position: relative;
+  border-bottom: 1px solid #bebebe;
+
+  h2 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 1.2rem 0;
+  }
+  p {
+    margin: 1.2rem 0;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.contactingHost {
+  position: relative;
+  border-bottom: 1px solid #bebebe;
+  h2 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    cursor: pointer;
+  }
+  p {
+    margin: 1.2rem 0;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.priceAndFees {
+  position: relative;
+  h2 {
+    position: relative;
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 1.2rem 0;
+  }
+  p {
+    margin: 1.2rem 0;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.arrowPosition {
+  position: absolute;
+  right: 0;
+  color: gray;
+
+}

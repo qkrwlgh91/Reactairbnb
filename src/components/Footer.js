@@ -1,4 +1,7 @@
 import React from "react";
+import {FaFacebookF, FaTwitter} from 'react-icons/fa';
+import {TiSocialInstagram} from 'react-icons/ti';
+import {GrLanguage} from 'react-icons/gr';
 
 const Footer = () => {
     return (
@@ -50,10 +53,14 @@ const Footer = () => {
                     <li>&middot; UK Modern Slavery Act</li>
                     <li>&middot; Company details</li>
                 </ul>
-                <ul>
-                    <li>English&#40;GB&#41;</li>
-                    <li>&pound; GBP</li>
-                    <li>사진 사진 사진</li>
+                <ul className="iconList">
+                    <li><GrLanguage/></li>
+                    <li className="underline">English&#40;GB&#41;</li>
+                    <li>&pound; </li>
+                    <li className="underline">GBP</li>
+                    <li><FaFacebookF/></li>
+                    <li><FaTwitter /></li>
+                    <li><TiSocialInstagram /></li>
                 </ul>
             </div>
         </div>

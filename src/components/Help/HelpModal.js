@@ -4,14 +4,43 @@ import {useSelector} from "react-redux";
 import HelpCont from './HelpCont';
 
 import {connect} from "react-redux";
+import HelpPriceAndFees from "./HelpPriceAndFees";
+import HelpContacting from "./HelpContacting";
+import HelpReservation from "./HelpReservation";
+
+import {BsChevronDown} from 'react-icons/bs';
+import {BsChevronUp} from 'react-icons/bs';
+import {BsX} from 'react-icons/bs';
 
 
 class HelpModal extends React.PureComponent {
 // function HelpModal ({ isOpen, close, tit, cont}) {
 
     // const help = useSelector(state=>state.helpContReducer)
+    state = {
+        isReservationShow: false,
+        isContactingShow: false,
+        isPriceShow: false
 
+    }
 
+    handleReservationShow = () => {
+        this.setState({
+            isReservationShow: !this.state.isReservationShow
+        })
+    }
+
+    handlecontactingShow = () => {
+        this.setState({
+            isContactingShow: !this.state.isContactingShow
+        })
+    }
+
+    handlePriceShow = () => {
+        this.setState({
+            isPriceShow: !this.state.isPriceShow
+        })
+    }
 
 
     render() {
@@ -26,7 +55,7 @@ class HelpModal extends React.PureComponent {
                             <div className="helpModal">
                                 <div className="helpModalTitle">
                                     <h1>Recommended help</h1>
-                                    <span> X </span>
+                                    <span> <BsX/> </span>
                                 </div>
                                 <div className="helpModalBody">
                                     <div className="helpSearch">
@@ -36,18 +65,52 @@ class HelpModal extends React.PureComponent {
                                     <div className="helpRecommend">
                                         <h3>{this.props.title}</h3>
                                         {this.props.helps.map(item =>
-                                            <HelpCont tit={item.tit} cont={item.cont} key={item.id.toString()} />
+                                            <HelpCont tit={item.tit} cont={item.cont} key={item.id.toString()}/>
                                         )}
                                         <h3>{this.props.topic}</h3>
                                     </div>
-                                    <div>
-                                        <h2>Reservation requests</h2>
+                                    <div className="reservation">
+                                        <h2 onClick={this.handleReservationShow}>Reservation requests
+                                            {this.state.isReservationShow ?
+                                                (
+                                                    <>
+                                                        <BsChevronUp className="arrowPosition"/>
+                                                        {this.props.reservation.map(item =>
+                                                            <HelpReservation tit={item.tit} key={item.id.toString()}/>
+                                                        )}
+                                                    </>)
+                                                :
+                                                <BsChevronDown className="arrowPosition"/>}
+                                        </h2>
+
                                     </div>
-                                    <div>
-                                        <h2>Contacting hosts</h2>
+                                    <div className="contactingHost">
+                                        <h2 onClick={this.handlecontactingShow}>Contacting hosts
+                                            {this.state.isContactingShow ?
+                                                (
+                                                    <>
+                                                        <BsChevronUp className="arrowPosition"/>
+                                                        {this.props.contacting.map(item =>
+                                                            <HelpContacting tit={item.tit} key={item.id.toString()}/>
+                                                        )}
+                                                    </>)
+                                                :
+                                                <BsChevronDown className="arrowPosition"/>}
+                                        </h2>
                                     </div>
-                                    <div>
-                                        <h2>Prices & fees</h2>
+                                    <div className="priceAndFees">
+                                        <h2 onClick={this.handlePriceShow}>Prices & fees
+                                            {this.state.isPriceShow ?
+                                                (
+                                                    <>
+                                                        <BsChevronUp className="arrowPosition"/>
+                                                        {this.props.price.map(item =>
+                                                            <HelpPriceAndFees tit={item.tit} key={item.id.toString()}/>
+                                                        )}
+                                                    </>)
+                                                :
+                                                <BsChevronDown className="arrowPosition"/>}
+                                        </h2>
                                     </div>
                                 </div>
                                 <div className="helpFooter">
@@ -75,7 +138,10 @@ let mapStateToProps = (state) => {
     return {
         helps: state.helpContReducer.hContents,
         title: state.helpContReducer.title,
-        topic: state.helpContReducer.topic
+        topic: state.helpContReducer.topic,
+        reservation: state.helpContReducer.reservation,
+        contacting: state.helpContReducer.contacting,
+        price: state.helpContReducer.pricesAndFees
     }
 }
 
