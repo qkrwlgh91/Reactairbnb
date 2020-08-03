@@ -29,17 +29,34 @@
   .searchList {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
+    cursor: pointer;
     ul {
       display: grid;
       grid-template-columns: repeat(1, 2fr 1fr 1fr 1fr 1fr);
+      border: 1px solid #bebebe;
+      border-radius: 0.7rem;
         @for $i from 1 through 5 {
           li:nth-child(#{$i}) {
-            border: 1px solid black;
             grid-row: 1 / 2;
+            border-left: 1px solid #bebebe;
             grid-column: $i / ($i + 1);
             padding: 1rem;
+            &:hover {
+              background: rgba(175,167,180,0.26);
+              border-radius: 0.7rem;
+            }
           }
         }
+      li:last-child {
+        border-left: none;
+        &:hover {
+
+          background : none;
+        }
+      }
+      li:first-child {
+        border-left: none;
+      }
     }
   }
 }

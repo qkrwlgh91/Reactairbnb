@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Route, Switch} from 'react-router-dom';
-import {Home, Login} from "../pages";
+import {Home, Login, RoomInfoAndMap} from "../pages";
 import Footer from "../components/Footer";
 
 class App extends React.Component {
@@ -14,6 +14,7 @@ class App extends React.Component {
                     <Route path="/Login/:name" component={Login}/>
                     <Route path="/Login" component={Login}/>
                 </Switch>
+                    <Route path={"/RoomInfoAndMap"} component={RoomInfoAndMap} />
                 <Footer/>
             </div>
         )

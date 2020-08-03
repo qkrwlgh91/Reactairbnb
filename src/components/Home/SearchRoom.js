@@ -1,4 +1,7 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {RoomInfoAndMap} from "../../pages";
+import {FiSearch} from 'react-icons/fi';
 
 const SearchRoom = () => {
     return (
@@ -14,23 +17,27 @@ const SearchRoom = () => {
             <div className="searchList">
                 <ul>
                     <li>
-                        <h5>LOCATION</h5>
-                        <input type="text" placeholder="Where are you going?"/>
+                        <label htmlFor="location">Location</label>
+                        <input type="text" id="location" placeholder="Where are you going?"/>
                     </li>
                     <li>
-                        <h5>CHECK IN</h5>
-                        <input type="text" placeholder="Add dates"/>
+                        <label htmlFor="checkIn">CHECK IN</label>
+                        <input type="text" id="checkIn" placeholder="Add dates"/>
                     </li>
                     <li>
-                        <h5>CHECK OUT</h5>
-                        <input type="text" placeholder="Add dates"/>
+                        <label htmlFor="checkOut">CHECK OUT</label>
+                        <input type="text" id="checkOut" placeholder="Add dates"/>
                     </li>
                     <li>
-                        <h5>GUESTS</h5>
-                        <input type="text" placeholder="Add guests"/>
+                        <label htmlFor="guestNumber">GUESTS</label>
+                        <input type="text" id="guestNumber" placeholder="Add guests"/>
                     </li>
                     <li>
-                        <input type="submit" value="Search" />
+                        <Link to="/RoomInfoAndMap" class="searchBtn">
+                            <button>
+                                <FiSearch /> Search
+                            </button>
+                        </Link>
                     </li>
                 </ul>
             </div>

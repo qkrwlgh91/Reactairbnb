@@ -1,0 +1,48 @@
+
+
+.roomAndMapBox {
+  display: flex;
+  .roomInfoBox {
+    width: 52.5%;
+    background: yellow;
+    .roomInfoHeader {
+      padding: 3rem 1rem;
+      h2.dateAndPersonInfo {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      h1.searchLocationInfo {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+      ul {
+        display: flex;
+
+        li button {
+          background: white;
+          border: 1px solid #bebebe;
+          border-radius: 1rem;
+          padding : 0.5rem 1rem;
+          font-size: 1.1rem;
+          margin: 1.5rem 0.7rem;
+        }
+      }
+      .roomPaging {
+        width: 100%;
+        background: #008B8B;
+      }
+    }
+  }
+  .mapPosition {
+    height: 90vh;
+    width: 47.5%;
+    position: relative;
+  }
+
+
+}
+
+
+
+
+
