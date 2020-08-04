@@ -3,10 +3,10 @@
 .roomAndMapBox {
   display: flex;
   .roomInfoBox {
+    position: relative;
     width: 52.5%;
-    background: yellow;
     .roomInfoHeader {
-      padding: 3rem 1rem;
+      padding: 3rem 1rem 1.2rem 1rem;
       h2.dateAndPersonInfo {
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -24,25 +24,92 @@
           border-radius: 1rem;
           padding : 0.5rem 1rem;
           font-size: 1.1rem;
-          margin: 1.5rem 0.7rem;
+          margin: 1.5rem 0.3rem;
         }
       }
-      .roomPaging {
-        width: 100%;
-        background: #008B8B;
+
+    }
+    .roomListBox {
+      width: 100%;
+      .roomListInner {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        border-bottom: 1px solid #bebebe;
+        padding: 1.5rem 1rem;
+        height: 27vh;
+        img {
+          grid-column: 1 / 2;
+          max-width: 100%;
+          min-height: 100%;
+          border-radius: 1rem;
+        }
+
+        .roomListInfo {
+          grid-column: 2 / 3;
+          padding: 0.3rem 0 0.1rem 1rem;
+          height: 100%;
+          position: relative;
+          p {
+            color: gray;
+            font-size: 1rem;
+          }
+          h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+            &::after {
+              display: block;
+              width: 10%;
+              content: "";
+              border: 1px solid #bebebe;
+              border-bottom: none;
+              margin: 0.9rem 0;
+            }
+          }
+          .roomSimpleInfo {
+            color: gray;
+          }
+          .roomOptionList {
+            color: gray;
+            line-height: 200%;
+
+          }
+          .roomListInfoFooter {
+            display: flex;
+            .starColor {
+              color: red;
+            }
+
+            .roomScore {
+              position: absolute;
+              left: 1rem;
+              bottom: 0.5rem;
+            }
+            .roomPriceInfo {
+              position: absolute;
+              right: 0;
+              bottom: 0.5rem;
+            }
+          }
+        }
       }
     }
+    .roomPaging {
+      width: 100%;
+      background: #008B8B;
+
+    }
   }
-  .mapPosition {
-    height: 90vh;
-    width: 47.5%;
-    position: relative;
-  }
+
 
 
 }
 
-
+.mapPosition {
+  height: 90vh;
+  width: 47.5%;
+  position: relative;
+}
 
 
 

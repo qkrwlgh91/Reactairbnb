@@ -17,8 +17,8 @@ function RoomAndMapBody () {
                         <li><button>Instant Book</button></li>
                         <li><button>More filters</button></li>
                     </ul>
-                    <RoomList />
                 </div>
+                <RoomList />
             </div>
             <div className="mapPosition">
                 <MapAction />
