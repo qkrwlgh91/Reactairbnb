@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {RoomInfoAndMap} from "../../pages";
 import {FiSearch} from 'react-icons/fi';
 
 const SearchRoom = () => {
@@ -33,7 +32,7 @@ const SearchRoom = () => {
                         <input type="text" id="guestNumber" placeholder="Add guests"/>
                     </li>
                     <li>
-                        <Link to="/RoomInfoAndMap" class="searchBtn">
+                        <Link to="/RoomInfoAndMap" className="searchBtn">
                             <button>
                                 <FiSearch /> Search
                             </button>

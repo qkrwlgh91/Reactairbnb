@@ -9,7 +9,7 @@ function RoomAndMapBody () {
             <div className="roomInfoBox">
                 <div className="roomInfoHeader">
                     <h2 className="dateAndPersonInfo">300+ stay &middot; 5 Aug - 26 Sep &middot; 1 guest</h2>
-                    <h1 className="searchLocationInfo">Syays in London</h1>
+                    <h1 className="searchLocationInfo">Stays in London</h1>
                     <ul>
                         <li><button>Cancellation flexibility</button></li>
                         <li><button>Type of place</button></li>

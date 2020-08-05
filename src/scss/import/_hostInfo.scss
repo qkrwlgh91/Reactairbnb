@@ -1,0 +1,61 @@
+.hostInfoHeader {
+  display: flex;
+  margin: 2rem 0 1rem 0;
+  img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  .hostInfoTit {
+    padding: 1rem;
+    h1 {
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    p {
+      color: #696969;
+      margin-top: 0.7rem;
+    }
+  }
+}
+.hostInfoBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0 2rem 0;
+  .hostIntro {
+    grid-column: 1 / 2;
+    padding-right: 10rem;
+    .hostIdentity {
+      margin-bottom: 1.3rem;
+
+      .redstar {
+        color: red;
+        margin-bottom: -0.1rem;
+      }
+      .identitycolor {
+        color: red;
+        margin-left: 1rem;
+        margin-bottom: -0.1rem;
+      }
+    }
+    p {
+      line-height: 150%;
+    }
+  }
+  .hostResponse {
+    grid-column: 2 / 3;
+    p {
+      margin-bottom: 1.3rem;
+    }
+    button {
+      font-weight: 400;
+      font-size: 1.1rem;
+      padding: 0.7rem 1.2rem;
+      background: none;
+      border: 1px solid black;
+      border-radius: 0.5rem;
+      margin: 1rem 0;
+    }
+  }
+
+}
