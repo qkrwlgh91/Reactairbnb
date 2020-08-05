@@ -2,9 +2,7 @@
   display: flex;
   margin: 2rem 0 1rem 0;
   img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
+    @include circlePic();
   }
   .hostInfoTit {
     padding: 1rem;
@@ -33,7 +31,7 @@
         margin-bottom: -0.1rem;
       }
       .identitycolor {
-        color: red;
+        color: #ff0000;
         margin-left: 1rem;
         margin-bottom: -0.1rem;
       }
@@ -48,13 +46,8 @@
       margin-bottom: 1.3rem;
     }
     button {
-      font-weight: 400;
-      font-size: 1.1rem;
-      padding: 0.7rem 1.2rem;
-      background: none;
-      border: 1px solid black;
-      border-radius: 0.5rem;
-      margin: 1rem 0;
+      @include RoomBtn($margin-top: 1rem);
+      margin-bottom: 1rem;
     }
   }
 

@@ -3,3 +3,30 @@
   width: $width;
   padding: $padding;
 }
+
+@mixin RoomBtn($margin-top: 1.5rem) {
+  background: none;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.9rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: $margin-top;
+}
+
+@mixin ellipsis($line-height: 120%, $-webkit-line-clamp: 3, $max-height: 2.5rem) {
+  line-height: $line-height;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $-webkit-line-clamp;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  max-height: $max-height;
+}
+
+@mixin circlePic($width: 5rem, $height: 5rem) {
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}

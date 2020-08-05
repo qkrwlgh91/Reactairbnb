@@ -1,0 +1,34 @@
+.RoomReviewBox {
+  padding: 2rem 0;
+  border-bottom: 1px solid #bebebe;
+
+
+  .RoomReviewList {
+    width: 50%;
+    height: 22vh;
+    padding-right: 3rem;
+    .ReviewHeader {
+      display: flex;
+      img {
+        @include circlePic($width: 4rem, $height: 4rem)
+      }
+      .ReviewerBox {
+        padding: 1rem;
+        .ReviewerNm {
+          font-weight: 800;
+          font-size: 1.1rem;
+        }
+        .ReviewDt {
+          color: gray;
+        }
+      }
+    }
+    p {
+      padding: 0.3rem 0;
+      @include ellipsis($line-height: 150%, $-webkit-line-clamp: 3,$max-height: 4rem);
+    }
+  }
+  button {
+    @include RoomBtn($margin-top: 1rem);
+  }
+}
