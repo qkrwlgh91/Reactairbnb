@@ -1,0 +1,35 @@
+.RoomSiteBox {
+  margin: 2rem 0;
+  h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .RoomMapBox {
+    position: relative;
+    height: 50vh;
+    margin: 1.5rem 0;
+    .RoomMap {
+    }
+  }
+  .RoomSiteIntro {
+    margin: 2.5rem 0;
+    h3 {
+      font-weight: 800;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+    p {
+      line-height: 150%;
+    }
+    button {
+      background: none;
+      border: 1px solid black;
+      border-radius: 0.5rem;
+      padding: 0.9rem 1.3rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+    }
+  }
+
+}

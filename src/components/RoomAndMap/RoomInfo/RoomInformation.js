@@ -10,7 +10,7 @@ import {FaStar} from 'react-icons/fa';
 
 import RoomDetails from "./RoomDetails";
 import Reservation from "./Reservation";
-import RoomLocation from "./RoomLocation";
+import RoomSite from "./RoomSite";
 import HostInfo from "./HostInfo";
 import RoomReview from "./RoomReview";
 
@@ -36,7 +36,7 @@ const RoomInformation = () => {
                 <Reservation />
             </div>
             <RoomReview />
-            <RoomLocation />
+            <RoomSite />
             <HostInfo />
         </div>
     )
