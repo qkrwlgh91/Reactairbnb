@@ -1,0 +1,76 @@
+.reservationBox {
+  grid-column: 2 / 3;
+  border: 1px solid #bebebe;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 6px 16px;
+  .reservationHeader {
+    position: relative;
+    display: flex;
+    h3 {
+      font-weight: 800;
+      font-size: 1.2rem;
+      span.MonthOrNight {
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+    p {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      .redStar {
+        color: red;
+        font-size: 0.8rem;
+      }
+    }
+
+  }
+  .RdateAndGuest {
+    background: pink;
+    margin: 1rem 0;
+  }
+
+  button.reserveBtn {
+    width: 100%;
+    background: rgb(230, 30, 77);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .roomOptionFee {
+    margin: 1rem 0;
+    border-bottom: 2px solid #bebebe;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    position: relative;
+    line-height: 150%;
+    .optionList {
+      text-decoration: underline;
+    }
+    .optionFee {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+
+  .totalFeeBox {
+    position: relative;
+    margin-top: 2.5rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+    h1.totalFeeTit {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    h1.totalFee {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

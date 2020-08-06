@@ -17,7 +17,7 @@
       color: #696969;
     }
   }
-  
+
   .roomDetailImg {
     position: relative;
     width: 100%;
@@ -54,5 +54,10 @@
       width: 100%;
       height: 23vh;
     }
+  }
+  .roomDetailMain {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem 0;
   }
 }

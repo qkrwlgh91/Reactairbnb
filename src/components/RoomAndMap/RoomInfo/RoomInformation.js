@@ -31,10 +31,11 @@ const RoomInformation = () => {
                 <img src={room1_4} alt="room1_4"/>
                 <img src={room1_5} alt="room1_5"/>
             </div>
-            <div>
+            <div className="roomDetailMain">
                 <RoomDetails/>
                 <Reservation />
             </div>
+            <hr/>
             <RoomReview />
             <RoomSite />
             <HostInfo />
